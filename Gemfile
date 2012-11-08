@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 3.2.1'
 
 # Cosmetic Gems
 gem "haml"
-gem "bootstrap_builder"
+gem "bootstrap_builder", '~> 0.3.3'
 gem 'font-awesome-rails'
 
 # Authentication
@@ -43,7 +43,7 @@ end
 
 # Everything in assets is needed by Heroku
 group :assets do
-  gem "bootstrap_builder"
+  gem "bootstrap_builder", '~> 0.3.3'
   gem 'uglifier', '>= 1.0.3'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
