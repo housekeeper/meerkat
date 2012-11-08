@@ -6,7 +6,7 @@ namespace :db do
     Rake::Task["db:create"].invoke
     Rake::Task["db:migrate"].invoke
     Rake::Task["db:seed"].invoke
-    Rake::Task["db:test:clone"].invoke
+    #Rake::Task["db:test:clone"].invoke
     Rake::Task
   end
 

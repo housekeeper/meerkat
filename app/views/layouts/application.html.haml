@@ -36,8 +36,8 @@
               = link_to root_path do
                 %i.icon-home
                 %span== Dashboard
-            %li{:class => (current_page?(people_path) ? "active" : "")}
-              = link_to people_path do
+            %li{:class => (current_page?(root_path) ? "active" : "")}
+              = link_to root_path do
                 %i.icon-group
                 %span== People
 
