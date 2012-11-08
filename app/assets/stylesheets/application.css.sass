@@ -1,0 +1,39 @@
+@import "bootstrap"
+@import "bootstrap-responsive"
+
+@import "font-awesome"
+@import "base-admin"
+@import "base-admin-responsive"
+@import "dashboard"
+
+// Override for Bootstrapbuilder
+[class^="icon-"], [class*=" icon-"]
+  background-image: image-url("glyphicons-halflings.png")
+
+.icon-white
+  background-image: image-url("glyphicons-halflings-white.png")
+
+
+
+
+
+h1, h2, h3, h4, h5, h6, address
+  font-family: 'Droid Sans', "Helvetica Neue"
+
+.loading
+  background: url(/assets/ajax-loader.gif) no-repeat 8px center
+  padding: 12px
+  display: none
+  position: relative
+  float: right
+
+body
+  font-size: 12px
+
+small
+  font-size: 1em
+  color: gray
+  p
+    font-size: 0.8em
+  ul
+    font-size: 0.8em

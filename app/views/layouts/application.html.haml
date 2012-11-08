@@ -1,0 +1,78 @@
+!!!
+%html
+  %head
+    %title Meerkat Manager
+
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}
+
+    = csrf_meta_tags
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'
+    = stylesheet_link_tag "application"
+    = yield :head
+
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          %a.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+
+          = link_to "Meerkat Logo", root_path, :alt => 'Meerkat Manager', :class => "brand"
+
+          .nav-collapse
+            %ul.nav.pull-right
+              = render :partial => "shared/navigation"
+            
+
+    .subnavbar
+      .subnavbar-inner
+        .container
+          %ul.mainnav
+            %li{:class => (current_page?(root_path) ? "active" : "")}
+              = link_to root_path do
+                %i.icon-home
+                %span== Dashboard
+            %li{:class => (current_page?(people_path) ? "active" : "")}
+              = link_to people_path do
+                %i.icon-group
+                %span== People
+
+            %li{:class => (current_page?("") ? "active" : "")}
+              = link_to "#" do
+                %i.icon-calendar
+                %span== Scheduler
+
+    .searchbar
+      .searchbar-inner
+        .row
+          .span4.offset1
+            .btn-group
+              =# link_to image_tag('cc/user_icon&16.png'), new_rrm_person_path, :class => "btn btnsmall btn-toolbar"
+             
+          .span7.pull-right
+            .loading
+            =# render :partial => 'search/box'
+        
+                        
+    .main
+      .main-inner
+        .container
+          = render :partial => 'shared/flash_message'
+          = yield
+          
+
+    .extra
+      .extra-inner
+        .container
+          = yield (:extra)
+
+    .footer
+      .footer-inner.float-right
+        .container
+          .span12.float-right
+            == © Meerkat Manager Limited
+            = Date.today.year
