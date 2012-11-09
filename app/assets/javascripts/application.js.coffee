@@ -5,7 +5,7 @@
 //= require bootstrap
 //= require bootstrap_builder
 
-//= base
+//= require base
 
 //= require_tree .
 
