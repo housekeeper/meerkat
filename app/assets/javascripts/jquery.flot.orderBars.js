@@ -14,9 +14,9 @@
  * The plugin adjust the point by adding a value depanding of the barwidth
  * Exemple for 3 series (barwidth : 0.1) :
  *
- *          first bar décalage : -0.15
- *          second bar décalage : -0.05
- *          third bar décalage : 0.05
+ *          first bar dï¿½calage : -0.15
+ *          second bar dï¿½calage : -0.05
+ *          third bar dï¿½calage : 0.05
  *
  */
 
@@ -43,7 +43,7 @@
                 
                 if(nbOfBarsToOrder >= 2){  
                     var position = findPosition(serie);
-                    var decallage = 0;
+                    var decallage = 0; 
                     
                     var centerBarShift = calculCenterBarShift();
 
