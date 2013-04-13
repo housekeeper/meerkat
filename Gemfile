@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
-
-gem 'jquery-rails'
+gem 'jquery-rails', '2.0.3'
 gem 'json'
+
+
+# Core Gems
 gem 'pg'
+gem 'paper_trail', '~> 2'
+
 gem 'sass-rails',   '~> 3.2.5'
 gem 'coffee-rails', '~> 3.2.2'
 
@@ -53,5 +56,5 @@ end
 
 # Everything in production is required by Heroku
 group :production do
-  gem "thin"
+  gem "puma"
 end
