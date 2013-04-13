@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/daveed/flat_ui
+  revision: 9ed6459b5d903f941cd73b853a5ab031a0a330b5
+  specs:
+    flat_ui (0.1.0)
+
+GIT
   remote: https://github.com/housekeeper/bootstrap_builder.git
   revision: 55623131fe5645c750ea2eb0cb585fe19e5b5132
   specs:
@@ -217,7 +223,7 @@ DEPENDENCIES
   acts_as_commentable
   bootstrap_builder!
   capybara (= 2.0.3)
-  coffee-rails (~> 3.2.1)
+  coffee-rails (~> 3.2.2)
   cucumber-rails
   database_cleaner (>= 0.6.7)
   devise (~> 2.1.2)
@@ -225,6 +231,7 @@ DEPENDENCIES
   execjs
   factory_girl_rails (~> 3.5.0)
   ffaker (>= 1.12.0)
+  flat_ui!
   font-awesome-rails
   font-awesome-sass-rails
   haml

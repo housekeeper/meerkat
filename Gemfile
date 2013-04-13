@@ -10,7 +10,6 @@ gem 'coffee-rails', '~> 3.2.2'
 
 # Cosmetic Gems
 gem "haml"
-gem "bootstrap_builder", :git => "https://github.com/housekeeper/bootstrap_builder.git"
 gem 'font-awesome-rails'
 
 # Authentication
@@ -27,6 +26,8 @@ gem 'execjs'
 gem 'therubyracer'
 
 # Custom gems
+gem "bootstrap_builder", :git => "https://github.com/housekeeper/bootstrap_builder.git"
+gem "flat_ui",           :git => "https://github.com/daveed/flat_ui"
 
 group :test, :development do
   gem 'haml-rails', '>= 0.3.5'
