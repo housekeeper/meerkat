@@ -1,17 +1,57 @@
-@import "bootstrap"
-@import "bootstrap-responsive"
+@import "bootstrap_builder/bootstrap"
+@import "bootstrap_builder/bootstrap-responsive"
 @import "font-awesome"
 @import 'font-awesome-ie7'
-@import "base-admin"
-@import "base-admin-responsive"
+@import "flat_ui/flat-ui"
+
+
 @import "dashboard"
 
-// Override for Bootstrapbuilder
-[class^="icon-"], [class*=" icon-"]
-  background-image: image-url("glyphicons-halflings.png")
 
-.icon-white
-  background-image: image-url("glyphicons-halflings-white.png")
+// Colors
+$base: #34495e
+$firm: #1abc9c
+
+$gray: #95a5a6
+$lightgray: #ecf0f1
+$inverse: #fff
+
+$success: #2ecc71
+$danger: #e74c3c
+$warning: #f1c40f
+$info: #3498db
+
+// Font
+$base-font-family: 'Lato', sans-serif
+$base-font-size: 14px
+
+
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Open Sans', sans-serif
+  color: #2c3e50
+
+body
+  background-color: white
+  overflow-x: hidden
+  font-family: 'Open Sans Condensed', sans-serif
+
+a
+  color: #a62e21
+  text-decoration: none
+  transition: all 0.25s ease 0s
+
+a:hover
+  color: #ff7566
+  text-decoration: none
+
+h1, h2, h3, h4, h5, h6, address
+  font-weight: 200
+  font-family: 'Abel', sans-serif
+
+
 
 
 
