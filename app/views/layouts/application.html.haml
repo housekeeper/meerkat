@@ -14,9 +14,18 @@
     = yield :head
 
   %body
+    - if content_for?(:no_container)
+      = yield(:no_container)
+    - else
+      .container-fluid.padding-top
+        .span12.search_results#search-everything{'data-search-url' => "#{search_everything_url}", 'data-search-string' => ""}
 
+        = render :partial => 'shared/flash_message'
+        = yield
 
-
-    .footer
-      == © Meerkat Manager Limited
-      = Date.today.year
+      %footer
+        .container
+          .float-right
+            %p
+              == © Meerkat Manager Limited
+              = Date.today.year
