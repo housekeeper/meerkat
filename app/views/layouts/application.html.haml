@@ -18,10 +18,9 @@
       = yield(:no_container)
     - else
       .container-fluid.padding-top
-        .span12.search_results#search-everything{'data-search-url' => "#{search_everything_url}", 'data-search-string' => ""}
-
-        = render :partial => 'shared/flash_message'
-        = yield
+        .span12.search_results
+          = render :partial => 'shared/flash_message'
+          = yield
 
       %footer
         .container
