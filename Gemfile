@@ -37,13 +37,17 @@ group :test, :development do
   gem "rspec-rails", "~> 2.10.1"
   gem "email_spec", "~> 1.2.1"
   gem "factory_girl_rails", "~> 3.5.0"
-  gem "cucumber-rails"
   gem "capybara", "= 2.0.3"
   gem "shoulda", "~> 3.1.1"
   gem "database_cleaner", ">= 0.6.7"
   gem "minitest"
   gem 'ffaker', '>= 1.12.0'
 end
+
+group :test do
+  gem "cucumber-rails"
+end
+
 
 # Everything in assets is needed by Heroku
 group :assets do
